@@ -1,6 +1,9 @@
 mod day1;
 
 fn main() {
-    let result = day1::extractor::solution_day_1();
+    let mut result = day1::extractor::solution_part_1();
+    println!("Result is {:?}", result);
+
+    result = day1::extractor::solution_part_2();
     println!("Result is {:?}", result);
 }
