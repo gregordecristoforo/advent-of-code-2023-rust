@@ -45,7 +45,7 @@ pub fn solution_part_1() -> io::Result<()> {
         .collect();
 
     let mut result_part1 = 0;
-    if let Ok(file) = File::open("data.txt") {
+    if let Ok(file) = File::open("/home/gregor/git/adventofcode-2023-rust/src/day2/data.txt") {
         for (i, line) in io::BufReader::new(file).lines().enumerate() {
             let cleaned_string = line?.splitn(2, ':').nth(1).unwrap_or("").trim().to_string();
             let games: Vec<Round> = cleaned_string
@@ -72,7 +72,7 @@ pub fn solution_part_1() -> io::Result<()> {
 pub fn solution_part_2() -> io::Result<()> {
     let mut result_part2 = 0;
 
-    if let Ok(file) = File::open("data.txt") {
+    if let Ok(file) = File::open("/home/gregor/git/adventofcode-2023-rust/src/day2/data.txt") {
         for line in io::BufReader::new(file).lines() {
             let cleaned_string = line?.splitn(2, ':').nth(1).unwrap_or("").trim().to_string();
             let games: Vec<Round> = cleaned_string

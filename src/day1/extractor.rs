@@ -4,7 +4,7 @@ use std::io::{self, BufRead};
 
 pub fn solution_part_1() -> io::Result<()> {
     // Open the file
-    let file = File::open("day1/data.txt")?;
+    let file = File::open("/home/gregor/git/adventofcode-2023-rust/src/day1/data.txt")?;
     let reader = io::BufReader::new(file);
 
     // Initialize result variable
@@ -36,7 +36,7 @@ pub fn solution_part_1() -> io::Result<()> {
 }
 
 pub fn solution_part_2() -> io::Result<()> {
-    let file = File::open("day1/data.txt")?;
+    let file = File::open("/home/gregor/git/adventofcode-2023-rust/src/day1/data.txt")?;
     let reader = io::BufReader::new(file);
 
     let mut word_to_number = HashMap::new();
