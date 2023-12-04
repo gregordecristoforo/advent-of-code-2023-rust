@@ -1,5 +1,6 @@
 mod day1;
 mod day2;
+mod day4;
 
 fn main() {
     println!("Day 1:");
@@ -15,6 +16,14 @@ fn main() {
         eprintln!("Error: {}", e);
     }
     if let Err(e) = day2::game::solution_part_2() {
+        eprintln!("Error: {}", e);
+    }
+
+    println!("Day 4:");
+    if let Err(e) = day4::cards::solution_part_1() {
+        eprintln!("Error: {}", e);
+    }
+    if let Err(e) = day4::cards::solution_part_2() {
         eprintln!("Error: {}", e);
     }
 }

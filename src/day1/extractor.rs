@@ -29,8 +29,7 @@ pub fn solution_part_1() -> io::Result<()> {
         }
     }
 
-    // Print the result
-    println!("Result is {}", result);
+    println!("Result part 1: {}", result);
 
     Ok(())
 }
@@ -56,8 +55,7 @@ pub fn solution_part_2() -> io::Result<()> {
         result += calculate_calibration_value(&line, &word_to_number);
     }
 
-    // Print the result
-    println!("Result is {}", result);
+    println!("Result part 2: {}", result);
 
     Ok(())
 }
