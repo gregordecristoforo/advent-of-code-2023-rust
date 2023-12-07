@@ -33,10 +33,9 @@ fn main() {
     if let Err(e) = day4::cards::solution_part_2() {
         eprintln!("Error: {}", e);
     }
-    
+
     println!("Day 6:");
     if let Err(e) = day6::races::solutions() {
         eprintln!("Error: {}", e);
     }
-
 }
